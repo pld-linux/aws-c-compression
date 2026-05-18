@@ -5,13 +5,13 @@
 Summary:	AWS C Compression library
 Summary(pl.UTF-8):	Biblioteka AWS C Compression
 Name:		aws-c-compression
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/awslabs/aws-c-compression/releases
 Source0:	https://github.com/awslabs/aws-c-compression/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b36dc9f884efeb72eb7972a9d6bfadec
+# Source0-md5:	43fe6220d50678e2cf3290641bc11b53
 URL:		https://github.com/awslabs/aws-c-compression
 BuildRequires:	aws-c-common-devel
 BuildRequires:	cmake >= 3.9
@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NOTICE README.md
-%attr(755,root,root) %{_libdir}/libaws-c-compression.so.1.0.0
+%{_libdir}/libaws-c-compression.so.1.0.0
 
 %files devel
 %defattr(644,root,root,755)
