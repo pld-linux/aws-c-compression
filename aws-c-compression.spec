@@ -33,8 +33,8 @@ zaimplementowany jest tylko algorytm Huffmana.
 Summary:	Header files for AWS C Compression library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki AWS C Compression
 Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	aws-c-common-devel >= 1.0
+Requires:	%{name}%{?_isa} = %{version}-%{release}
+Requires:	aws-c-common-devel%{?_isa} >= 1.0
 
 %description devel
 Header files for AWS C Compression library.
